@@ -3,9 +3,9 @@ import AboutLogo from '../../assets/Logos/roundedLogo.png'
 
 const AboutUs = () => {
      const timelineItems = [
-    { id: 1, text: 'শিক্ষা' }, // Shiksha (Education)
-    { id: 2, text: 'সেবা' },   // Seba (Service)
-    { id: 3, text: 'সহযোগিতা' }  // Da'wah (Invitation/Call to Islam)
+    { id: 1, text: 'শিক্ষা' }, 
+    { id: 2, text: 'সেবা' },   
+    { id: 3, text: 'সহযোগিতা' }  
   ];
     return (
         <div className='mt-10'>
