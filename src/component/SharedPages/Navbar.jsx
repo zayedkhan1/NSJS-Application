@@ -20,7 +20,7 @@ const Navbar = () => {
          {/* w-full  fixed z-10  bg-transparent shadow-none */}
   <nav className={`fixed top-0 left-0 w-full z-20 transition-colors duration-300 ${
         isScrolled
-          ? "backdrop-blur-md bg-white/20"
+          ? "bg-blue-400"
           : "bg-transparent"
       }`}>
       <div className="max-w-7xl mx-auto px-4">

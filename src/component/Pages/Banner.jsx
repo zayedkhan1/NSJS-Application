@@ -11,12 +11,12 @@ const Banner = () => {
         <div >
             
         
-<div className='relative'>
-    <Navbar></Navbar>
+<div className=''>
+    
   {/* Banner Section */}
   <div
 //    min-h-screen
-    className=" min-h-screen flex items-center justify-center"
+    className=" relative min-h-screen flex items-center justify-center"
     style={{
       backgroundImage: `url(${newLogo})`,
       backgroundSize: "cover",
