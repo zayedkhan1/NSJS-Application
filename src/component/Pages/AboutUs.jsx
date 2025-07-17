@@ -3,7 +3,7 @@ import AboutLogo from '../../assets/Logos/roundedLogo.png'
 
 const AboutUs = () => {
      const timelineItems = [
-    { id: 1, text: 'শিক্ষা' }, 
+    { id: 1, text: 'শিক্ষা', },
     { id: 2, text: 'সেবা' },   
     { id: 3, text: 'সহযোগিতা' }  
   ];

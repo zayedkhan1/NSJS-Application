@@ -1,34 +1,36 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { RiMenu2Fill } from "react-icons/ri";
 import navLogo from '../../assets/Logos/roundedLogo.png'
 
 const Navbar = () => {
       const [menuOpen, setMenuOpen] = useState(false);
-        const [isScrolled, setIsScrolled] = useState(false);
+        // const [isScrolled, setIsScrolled] = useState(false);
 
-      useEffect(() => {
-    const handleScroll = () => {
-       setIsScrolled(window.scrollY > 0);
-    };
+  //     useEffect(() => {
+  //   const handleScroll = () => {
+  //      setIsScrolled(window.scrollY > 0);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
     return (
         <div>
             
          {/* w-full  fixed z-10  bg-transparent shadow-none */}
-  <nav className={`fixed top-0 left-0 w-full z-20 transition-colors duration-300 ${
+         {/* scrool */}
+         {/*  ${
         isScrolled
           ? "bg-blue-400"
-          : "bg-transparent"
-      }`}>
+          : "bg-blue-300"
+      }` */}
+  <nav className="w-full fixed top-0 left-0 z-50 bg-blue-400 shadow">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <div className="flex items-center ">
             <a
-              href="#"
+              href="/"
               className=" flex-shrink-0 flex items-center text-xl font-semibold font-sans text-white"
             >
               <img
@@ -49,7 +51,7 @@ const Navbar = () => {
               Home
             </a> */}
             <a
-              href="#"
+              href="/aboutOurs"
               className="relative text-white  transition-transform duration-300 transform hover:scale-105
           before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-blue-600
           before:transition-all before:duration-500 hover:before:w-full" >
@@ -132,6 +134,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    <div className="h-18"></div>
 
         </div>
     );
