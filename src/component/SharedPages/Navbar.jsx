@@ -58,7 +58,7 @@ const Navbar = () => {
               আমাদের সম্পর্কে 
             </a>
             <a
-              href="#"
+              href="/project"
               className="relative text-white  transition-transform duration-300 transform hover:scale-105
           before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-blue-600
           before:transition-all before:duration-500 hover:before:w-full"
@@ -66,7 +66,7 @@ const Navbar = () => {
               প্রকল্প 
             </a>
             <a
-              href="#"
+              href="/news"
               className="relative text-white  transition-transform duration-300 transform hover:scale-105
           before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-blue-600
           before:transition-all before:duration-500 hover:before:w-full"
@@ -74,7 +74,7 @@ const Navbar = () => {
               সংবাদ 
             </a>
             <a
-              href="#"
+              href="/contact"
               className="relative text-white transition-transform duration-300 transform hover:scale-105
           before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-blue-600
           before:transition-all before:duration-500 hover:before:w-full"
@@ -102,25 +102,25 @@ const Navbar = () => {
                   Home
                 </a> */}
                 <a
-                  href="#"
+                  href="/aboutOurs"
                   className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
                 >
                    আমাদের সম্পর্কে 
                 </a>
                 <a
-                  href="#"
+                  href="/project"
                   className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
                 >
                   প্রকল্প
                 </a>
                 <a
-                  href="#"
+                  href="/news"
                   className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
                 >
                   সংবাদ
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
                 >
                    যোগাযোগ
