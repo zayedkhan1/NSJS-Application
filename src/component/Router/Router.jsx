@@ -7,6 +7,7 @@ import AboutOurs from "../RoutingPages/AboutOurs";
 import Contact from "../RoutingPages/Contact";
 import OurProject from "../Pages/OurProject";
 import RecentNews from "../Pages/RecentNews";
+import BecomeMember from "../RoutingPages/BecomeMember";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         {
           path:'/news',
           element:<RecentNews></RecentNews>
+        },
+        {
+          path:'/member',
+          element:<BecomeMember></BecomeMember>
         }
     ]
   },

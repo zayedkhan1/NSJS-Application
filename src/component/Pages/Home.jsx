@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa6";
 import RecentNews from './RecentNews';
 import Project from '../Constant/ProjectData';
 import News from '../Constant/AllNwes';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const featuredProjects =Project.slice(0, 6);
@@ -133,6 +134,7 @@ const Home = () => {
 
  <div className='text-center'>
        {/* <button>আরো</button> */}
+ <Link to='/news'>
  <button
   className="
     inline-flex items-center px-5 py-2 border-2 bg-blue-500 hover:bg-blue-600 border-blue-600 text-white font-medium rounded-lg
@@ -153,6 +155,7 @@ const Home = () => {
     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
   </svg>
 </button>
+ </Link>
 </div>
 
 

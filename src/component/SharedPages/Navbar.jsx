@@ -25,7 +25,7 @@ const Navbar = () => {
           : "bg-blue-300"
       }` */}
   <nav className="w-full fixed top-0 left-0 z-50 bg-blue-400 shadow">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-2">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <div className="flex items-center ">
@@ -44,12 +44,14 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center space-x-8">
-            {/* <a
-              href="#"
-              className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
+            <a
+              href="/"
+                className="relative text-white  transition-transform duration-300 transform hover:scale-105
+          before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-blue-600
+          before:transition-all before:duration-500 hover:before:w-full"
             >
-              Home
-            </a> */}
+                 হোম
+            </a>
             <a
               href="/aboutOurs"
               className="relative text-white  transition-transform duration-300 transform hover:scale-105
@@ -63,7 +65,7 @@ const Navbar = () => {
           before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-blue-600
           before:transition-all before:duration-500 hover:before:w-full"
             >
-              প্রকল্প 
+              প্রকল্প সমূহ
             </a>
             <a
               href="/news"
@@ -81,6 +83,14 @@ const Navbar = () => {
             >
               যোগাযোগ
             </a>
+            <a
+              href="/member"
+              className="relative text-white transition-transform duration-300 transform hover:scale-105
+          before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-blue-600
+          before:transition-all before:duration-500 hover:before:w-full"
+            >
+              আমাদের সদস্য হোন
+            </a>
             {/* <a href="#">
               <button>Login</button>
             </a> */}
@@ -95,12 +105,12 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {menuOpen && (
               <div className="absolute top-full right-0 mt-2 flex flex-col bg-white shadow px-4 py-3 space-y-2 w-40 z-20">
-                {/* <a
-                  href="#"
+                <a
+                  href="/"
                   className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
                 >
-                  Home
-                </a> */}
+                হোম
+                </a>
                 <a
                   href="/aboutOurs"
                   className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
@@ -111,7 +121,7 @@ const Navbar = () => {
                   href="/project"
                   className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
                 >
-                  প্রকল্প
+                  প্রকল্প 
                 </a>
                 <a
                   href="/news"
@@ -124,6 +134,12 @@ const Navbar = () => {
                   className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
                 >
                    যোগাযোগ
+                </a>
+                <a
+                  href="/member"
+                  className="text-gray-400 hover:text-blue-600 font-bold transition-transform duration-300 transform hover:scale-105"
+                >
+                   আমাদের সদস্য হোন
                 </a>
                 {/* <a href="#">
                   <button>Login</button>

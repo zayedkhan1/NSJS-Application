@@ -2,6 +2,7 @@ import React from 'react';
 import newLogo from '../../assets/Logos/againBanner.jpg'
 import { Typewriter } from 'react-simple-typewriter';
 import Navbar from '../SharedPages/Navbar';
+import { Link } from 'react-router-dom';
 
 
 
@@ -46,7 +47,7 @@ const Banner = () => {
         <p className="mb-5">
                    আমরা কাজ করি নিঃস্বার্থভাবে সমাজের জন্য
         </p>
-        {/* <button className="btn btn-primary">আমাদের সাথে যোগ দিন </button> */}
+ <Link to='/member'>
    <button className="
   bg-gradient-to-r from-indigo-600 to-purple-600 
   text-white font-semibold 
@@ -62,6 +63,7 @@ const Banner = () => {
 ">
   আমাদের সাথে যোগ দিন
 </button>
+ </Link>
 
       </div>
     </div>
