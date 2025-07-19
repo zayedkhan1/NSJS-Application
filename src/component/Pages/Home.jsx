@@ -137,9 +137,9 @@ const Home = () => {
  <Link to='/news'>
  <button
   className="
-    inline-flex items-center px-5 py-2 border-2 bg-blue-500 hover:bg-blue-600 border-blue-600 text-white font-medium rounded-lg
+    inline-flex items-center px-5 py-2 border-2 bg-green-500 hover:bg-green-600 border-green-600 text-white font-medium rounded-lg
      hover:shadow-lg
-    active:scale-95 active:bg-blue-700 active:border-blue-700 active:shadow-inner
+    active:scale-95 active:bg-green-700 active:border-green-700 active:shadow-inner
     transition transform duration-150 mb-5
   "
 >
@@ -237,7 +237,7 @@ const Home = () => {
             />
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded shadow-sm text-sm transition"
+              className="bg-green-600 hover:bg-green-700 text-white py-2 rounded shadow-sm text-sm transition"
             >
               পাঠান
             </button>

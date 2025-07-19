@@ -8,7 +8,10 @@ const OurProject = () => {
     
     return (
     <div>
-      <h2 className='text-3xl text-center font-bold mb-5 mt-5'>আমাদের প্রকল্পসমূহ</h2>
+      {/* <h2 className='text-3xl text-center font-bold mb-5 mt-5'>আমাদের প্রকল্পসমূহ</h2> */}
+      <header className="bg-green-700 w-full text-white p-5 text-center font-serif text-2xl md:text-3xl">
+       আমাদের প্রকল্পসমূহ
+      </header>
  <div className="bg-gray-100 min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {Project.map((item) => (

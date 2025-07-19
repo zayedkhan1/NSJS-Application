@@ -131,9 +131,9 @@ const AboutOurs = () => {
       className="relative pl-6 mb-4 last:mb-0"
     >
       {/* outer circle */}
-      <span className="absolute left-0 top-0 w-4 h-4 rounded-full border-2 border-blue-500 bg-white flex items-center justify-center">
+      <span className="absolute left-0 top-0 w-4 h-4 rounded-full border-2 border-green-500 bg-white flex items-center justify-center">
         {/* inner dot */}
-        <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+        <span className="w-2 h-2 rounded-full bg-green-500"></span>
       </span>
       {item}
     </li>

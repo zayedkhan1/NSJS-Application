@@ -10,7 +10,9 @@ const RecentNews = () => {
   }, []);
     return (
         <div  className='shadow'>
-            <h2 className='text-3xl font-bold text-center mt-5 mb-5'>সাম্প্রতিক সংবাদ</h2>
+            <header className="bg-green-700 w-full text-white p-5 text-center font-serif text-2xl md:text-3xl">
+            সাম্প্রতিক সংবাদ
+      </header>
          
 {/*  */}
              <div>
@@ -36,7 +38,7 @@ const RecentNews = () => {
           {/* Content */}
           <div className="md:w-1/2 p-4 sm:p-6 flex flex-col justify-between h-full overflow-y-auto scroll-hidden">
             <div>
-              <h2 className="text-xl sm:text-2xl font-semibold mb-3">
+              <h2 className="text-xl  sm:text-2xl font-semibold mb-3">
                 {article.title}
               </h2>
               <p className="text-gray-600 mb-3 text-sm sm:text-base">

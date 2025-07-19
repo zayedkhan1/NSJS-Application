@@ -9,7 +9,7 @@ const AboutUs = () => {
   ];
     return (
         <div className='mt-10'>
-    <div className="flex flex-col md:flex-row items-center justify-around  p-4 gap-6  shadow p-5">
+    <div className="flex flex-col md:flex-row items-center justify-around   gap-6  shadow p-5">
   {/* Image Div */}
   <div className=" flex justify-center items-center p-4 w-full md:w-1/2">
     <img
@@ -48,13 +48,13 @@ const AboutUs = () => {
         {timelineItems.map((item) => (
           <div key={item.id} className="flex items-center mb-8 last:mb-0">
             {/* Circle marker */}
-            <div className="relative z-10 flex items-center justify-center w-6 h-6 rounded-full bg-white border-2 border-amber-400 text-green-600 font-bold">
+            <div className="relative z-10 flex items-center justify-center w-6 h-6 rounded-full bg-white border-2 border-green-400  font-bold">
               {/* This is the small green dot */}
-              <div className="w-2 h-2 rounded-full bg-amber-400"></div>
+              <div className="w-2 h-2 rounded-full bg-green-400"></div>
             </div>
 
             {/* Text content */}
-            <div className="ml-4 text-sm ">
+            <div className="ml-4 text-sm text-green-600  ">
               {item.text}
             </div>
           </div>

@@ -26,7 +26,7 @@ const Banner = () => {
   >
     <div className="absolute inset-0 bg-black/50"></div>
 
-    <div className="relative z-10 text-center text-white p-4 shadow">
+    <div className="relative z-10 text-center text-white p-4 ">
       <div className="max-w-md">
         
     <h2 className='text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-white leading-tight'>
@@ -48,19 +48,19 @@ const Banner = () => {
                    আমরা কাজ করি নিঃস্বার্থভাবে সমাজের জন্য
         </p>
  <Link to='/member'>
-   <button className="
-  bg-gradient-to-r from-indigo-600 to-purple-600 
-  text-white font-semibold 
-  px-6 py-3 
-  rounded-full 
-  shadow-md 
-  border border-transparent 
-  transition-all duration-300 ease-in-out 
-  hover:from-indigo-500 hover:to-purple-500 
-  hover:shadow-lg 
+   <button   className="
+  bg-gradient-to-r from-green-600 to-emerald-500
+  text-white font-semibold
+  px-6 py-3
+  rounded-full
+  shadow-md
+  border border-transparent
+  transition-all duration-300 ease-in-out
+  hover:from-green-500 hover:to-emerald-400
+  hover:shadow-lg
   hover:border-white/20
   active:scale-95
-">
+  " >
   আমাদের সাথে যোগ দিন
 </button>
  </Link>
