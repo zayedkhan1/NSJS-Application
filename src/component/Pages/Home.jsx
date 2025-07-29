@@ -4,9 +4,8 @@ import AboutUs from './AboutUs';
 import { FaFacebook } from "react-icons/fa6";
 
 import RecentNews from './RecentNews';
-import Project from '../Constant/ProjectData';
-import News from '../Constant/AllNwes';
 import { Link } from 'react-router-dom';
+import News, { Project } from '../Constant/ProjectData';
 
 const Home = () => {
     const featuredProjects =Project.slice(0, 6);

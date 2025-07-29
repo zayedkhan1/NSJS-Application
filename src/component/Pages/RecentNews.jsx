@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import News from '../Constant/AllNwes';
+import News from '../Constant/ProjectData';
 
 const RecentNews = () => {
  const [articles, setArticles] = useState([]);
