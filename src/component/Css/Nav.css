@@ -1,0 +1,26 @@
+.design a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white; /* text color */
+  transition: transform 0.3s;
+}
+
+.design a:hover {
+  transform: scale(1.05);
+}
+
+.design a::before {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* similar to -bottom-1 */
+  left: 0;
+  height: 4px;  /* similar to h-1 */
+  width: 0;
+  background-color: #16a34a; /* green-600 */
+  transition: all 0.5s;
+}
+
+.design a:hover::before {
+  width: 100%;
+}

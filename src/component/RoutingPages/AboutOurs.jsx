@@ -39,27 +39,14 @@ const AboutOurs = () => {
           </ul>
         </nav>
         {/* Content */}
-        {/* <main className="flex-1 p-6">
-          <article className="bg-white rounded-lg shadow-lg p-6 prose max-w-none prose-lg">
-            <h2 className="font-serif text-xl mb-4">
-                {navItems.find(n => n.id === activeId)?.title}
-            </h2>
-            <p>{navItems.find(n => n.id === activeId)?.content}</p>
-          </article>
-        </main> */}
+       
         <main className="flex-1 p-6">
             <article className="bg-white rounded-lg shadow-lg p-6 prose max-w-none prose-lg">
               <h2 className="font-serif text-xl mb-4">
                 {navItems.find(n => n.id === activeId)?.title}
               </h2>
               {Array.isArray(navItems.find(n => n.id === activeId)?.content) ? (
-                // <ul className="list-none pl-5 space-y-2">
-                    
-                //   {navItems.find(n => n.id === activeId)?.content.map((item, index) => (
-                    
-                //     <li key={index} class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-4 before:h-4 before:rounded-full before:border-2 before:border-blue-500 before:flex before:items-center before:justify-center after:content-[''] after:absolute after:left-1 after:top-1/2 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-blue-500 after:rounded-full">{item}</li>
-                //   ))}
-                // </ul>
+          
                 <ul className="list-none pl-8 relative">
   {/* vertical line */}
   <div className="absolute left-10 top-0 bottom-2 w-0.5 bg-gray-300"></div>

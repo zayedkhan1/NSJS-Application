@@ -1,29 +1,15 @@
 import React, { useState } from 'react';
 import { RiMenu2Fill } from "react-icons/ri";
 import navLogo from '../../assets/Logos/roundedLogo.png'
+import '../Css/Nav.css'
 
 const Navbar = () => {
       const [menuOpen, setMenuOpen] = useState(false);
-        // const [isScrolled, setIsScrolled] = useState(false);
-
-  //     useEffect(() => {
-  //   const handleScroll = () => {
-  //      setIsScrolled(window.scrollY > 0);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+    
     return (
         <div>
             
-         {/* w-full  fixed z-10  bg-transparent shadow-none */}
-         {/* scrool */}
-         {/*  ${
-        isScrolled
-          ? "bg-blue-400"
-          : "bg-blue-300"
-      }` */}
+     
   <nav className="w-full fixed top-0 left-0 z-50 bg-green-500  text-white shadow">
       <div className="max-w-7xl mx-auto px-2">
         <div className="flex items-center justify-between h-18">
@@ -43,57 +29,43 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center space-x-8">
+          <div className="hidden md:flex md:items-center space-x-8 design">
             <a
               href="/"
-                className="relative  transition-transform duration-300 transform hover:scale-105
-          before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-green-600
-          before:transition-all before:duration-500 hover:before:w-full"
+               
             >
                  হোম
             </a>
             <a
               href="/aboutOurs"
-              className="relative  transition-transform duration-300 transform hover:scale-105
-          before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-green-600
-          before:transition-all before:duration-500 hover:before:w-full" >
+              >
               আমাদের সম্পর্কে 
             </a>
             <a
               href="/project"
-              className="relative  transition-transform duration-300 transform hover:scale-105
-          before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-green-600
-          before:transition-all before:duration-500 hover:before:w-full"
+            
             >
               প্রকল্প সমূহ
             </a>
             <a
               href="/news"
-              className="relative  transition-transform duration-300 transform hover:scale-105
-          before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-green-600
-          before:transition-all before:duration-500 hover:before:w-full"
+              
             >
               সংবাদ 
             </a>
             <a
               href="/contact"
-              className="relative transition-transform duration-300 transform hover:scale-105
-          before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-green-600
-          before:transition-all before:duration-500 hover:before:w-full"
+              
             >
               যোগাযোগ
             </a>
             <a
               href="/member"
-              className="relative  transition-transform duration-300 transform hover:scale-105
-          before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-green-600
-          before:transition-all before:duration-500 hover:before:w-full"
+             
             >
               আমাদের সদস্য হোন
             </a>
-            {/* <a href="#">
-              <button>Login</button>
-            </a> */}
+            
           </div>
 
           {/* Mobile Button & Menu */}
@@ -141,9 +113,7 @@ const Navbar = () => {
                 >
                    আমাদের সদস্য হোন
                 </a>
-                {/* <a href="#">
-                  <button>Login</button>
-                </a> */}
+             
               </div>
             )}
           </div>
